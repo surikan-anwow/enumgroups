@@ -1,0 +1,13 @@
+[project]
+name = "enumgroups"
+version = "0.1.0"
+description = "Hierarchical enums using class structure and StrEnum"
+authors = [{name = "surikan.anwow"}]
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"

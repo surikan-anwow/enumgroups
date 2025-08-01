@@ -1,2 +1,3 @@
 # enumgroups
-Hierarchical enums using class structure and StrEnum
+
+Hierarchical enums with grouping support.
