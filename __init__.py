@@ -1,1 +1,1 @@
-from .base import GrpEnum
+from .base import GrpEnum, as_values

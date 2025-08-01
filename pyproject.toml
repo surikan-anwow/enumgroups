@@ -1,6 +1,6 @@
 [project]
 name = "enumgroups"
-version = "0.1.0"
+version = "0.1.1"
 description = "Hierarchical enums using class structure and StrEnum"
 authors = [{name = "surikan.anwow"}]
 license = {text = "MIT"}

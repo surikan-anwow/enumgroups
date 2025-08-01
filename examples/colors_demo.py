@@ -1,5 +1,5 @@
 from enum import StrEnum
-from enumgroups import GrpEnum
+from enumgroups.base import GrpEnum, as_values
 
 class COLORS(GrpEnum):
     class WARM(GrpEnum):
@@ -18,9 +18,21 @@ class COLORS(GrpEnum):
             GREEN = "green"
             PURPLE = "purple"
 
-if __name__ == "__main__":
-    for c in COLORS:
-        print("Color:", c)
 
+if __name__ == "__main__":
+
+    print("🍊 Direct access:", 
+          COLORS.WARM.SEC.ORANGE)
+    
+    print("✅ Membership test:", 
+          "green" in as_values(COLORS))
+    
+    print("🔎 Group of 'purple':", 
+          COLORS.group_of("purple"))
+    
+    print("🌿 Leaf elements:", 
+          list(COLORS.leaf_elems()))
+    
+    print("🧭 Leaf paths: str()")
     for path in COLORS.leaf_paths():
-        print("Path:", " → ".join(cls.__name__ for cls in path))
+        print(" → ".join(str(cls) for cls in path))
